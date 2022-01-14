@@ -22,7 +22,6 @@ Safety
 - I am fine to commit my week in the beginning, however remember that once I get
   onto my database connection I need to abstract out my password(s) into a file that
   isn't git tracked
-- No context related to the bank
 - Ids
 - Emails
 - Titles
