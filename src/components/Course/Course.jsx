@@ -1,14 +1,17 @@
 import "./Course.scss";
-import React from "react";
 
 const Course = (props) => {
-  const { createdBy, course, originCountry } = props.course;
+  const {  course, courseStart, duration, free, rotationOfTeachers, online, learningOutcome } = props.course;
 
   return (
     <div className="course">
       <h3>{course}</h3>
-      <p>Usually spoken in: {originCountry}</p>
-      <p>Added by: {createdBy}</p>
+      <p>Course starts in : {courseStart}</p>
+      <p>Duration (weeks) : {duration}</p>
+      <p>Free : {free}</p>
+      <p>Rotation of teachers : {rotationOfTeachers}</p>
+      <p>Held online : {online}</p>
+      <p>Learning outcome : {learningOutcome}</p>
     </div>
   );
 };

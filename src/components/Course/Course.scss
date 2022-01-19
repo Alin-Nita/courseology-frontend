@@ -12,7 +12,18 @@
   }
 
   p {
-    font-size: 12px;
-    font-weight: lighter;
+    font-size: 13px;
+    font-weight: Bold;
   }
+  
+
+:hover {
+  background-color: rgb(49, 45, 39);
+  border-radius: 5px;
+  transition: background-color 1s, border-radius 1s;
+  border-color: yellow;
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em yellow;
+  cursor: pointer;
+}
 }

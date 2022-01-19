@@ -8,11 +8,11 @@ const Nav = () => {
         Home
       </Link>
 
-      <Link className="nav-menu__item" to="/greetings">
+      <Link className="nav-menu__item" to="/courses">
         Courses
       </Link>
 
-      <Link className="nav-menu__item" to="/new-greeting">
+      <Link className="nav-menu__item" to="/new-course">
         Add Course
       </Link>
     </div>

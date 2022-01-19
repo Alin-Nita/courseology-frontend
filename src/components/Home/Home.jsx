@@ -1,5 +1,4 @@
 import "./Home.scss";
-import React from "react";
 
 const Home = () => {
   return (
@@ -12,7 +11,7 @@ const Home = () => {
           placeholder="Find your next course !..."
           aria-label="Search through site content"
         />
-        <button>Search</button>
+        <button className="search-btn">Search</button>
       </form>
     </div>
   );

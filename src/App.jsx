@@ -1,10 +1,10 @@
 import "./App.scss";
-import Home from "./components/Home/Home";
+import Dashboard from "./containers/Dashboard";
 
 const App = () => {
   return (
     <div>
-      <h1>Project courseology</h1>
+      <h1>Welcome to courseology</h1>
       <Dashboard />
     </div>
   );
