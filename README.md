@@ -34,3 +34,5 @@ Safety
 - What should a course have(name, category, completionTime, price, syllabus,
   author etc)
   -Use something like MURAL to plan out my structure
+  
+  <img width="1181" alt="Screenshot 2022-01-27 at 15 06 17" src="https://user-images.githubusercontent.com/89453097/151398269-18678f21-a8eb-4456-8fd7-59468bf8c87b.png">
