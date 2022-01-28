@@ -5,23 +5,21 @@ const Form = () => {
   const [course, setCourse] = useState({
     course: "",
     courseStart: "",
-    duration: 0,
-    free: false,
-    rotationOfTeachers: false,
-    online: false,
-    learningOutcome: ""
+    duration: "",
+    free: "",
+    rotationOfTeachers: "",
+    online: "",
+    learningOutcome: "",
   });
 
   const handleSubmit = (e) => {
-    let x = JSON.stringify(course);
-    console.log(course);
-    e.preventDefault();
+    // e.preventDefault();
     fetch("http://localhost:8080/course", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      
+
       body: JSON.stringify(course),
     })
       .then((response) => response.json())
@@ -36,35 +34,29 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="course name"
-          onInput={(e) => setCourse({ ...course, course: e.target.value })}
-        />
-        <input
-          type="text"
           placeholder="course"
           onInput={(e) => setCourse({ ...course, course: e.target.value })}
         />
         <input
           type="text"
           placeholder="course start"
-          onInput={(e) =>
-            setCourse({ ...course, courseStart: e.target.value })
-          }
+          onInput={(e) => setCourse({ ...course, courseStart: e.target.value })}
         />
 
         <input
           type="number"
           placeholder="duration"
-          onInput={(e) =>
-            setCourse({ ...course, duration: parseInt(e.target.value) })
-          }
+          onInput={(e) => setCourse({ ...course, duration: e.target.value })}
         />
 
         <input
           type="text"
           placeholder="free"
           onInput={(e) =>
-            setCourse({ ...course, free: JSON.parse(e.target.value.toLowerCase()) })
+            setCourse({
+              ...course,
+              free: e.target.value,
+            })
           }
         />
 
@@ -72,7 +64,10 @@ const Form = () => {
           type="text"
           placeholder="rotation of teachers"
           onInput={(e) =>
-            setCourse({ ...course, rotationOfTeachers: JSON.parse(e.target.value.toLowerCase()) })
+            setCourse({
+              ...course,
+              rotationOfTeachers: e.target.value,
+            })
           }
         />
 
@@ -80,7 +75,10 @@ const Form = () => {
           type="text"
           placeholder="held online"
           onInput={(e) =>
-            setCourse({ ...course, online: JSON.parse(e.target.value.toLowerCase()) }) 
+            setCourse({
+              ...course,
+              online: e.target.value,
+            })
           }
         />
 

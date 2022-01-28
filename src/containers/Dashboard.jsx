@@ -9,20 +9,14 @@ import Nav from "../components/Nav/Nav";
 const Dashboard = () => {
   const [courses, setCourses] = useState([]);
 
-  // const getCourses = () => {
-  //   fetch("http://localhost:8080/courses")
-  //     .then((res) => res.json())
-  //     .then((json) => setCourses(json))
-  //     .catch((err) => console.log(err));
-  // };
+  const getCourses = () => {
+    fetch("http://localhost:8080/courses")
+      .then((res) => res.json())
+      .then((json) => setCourses(json))
+      .catch((err) => console.log(err));
+  };
 
- useEffect(() => {
-    const getCourses = () => {
-      fetch("http://localhost:8080/courses")
-        .then(res => res.json())
-        .then(json => setCourses(json))
-        .catch(err => console.log(err))
-    }
+  useEffect(() => {
     getCourses();
   }, []);
 
