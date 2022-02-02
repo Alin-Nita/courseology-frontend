@@ -22,13 +22,6 @@ Safety
 - I am fine to commit my week in the beginning, however remember that once I get
   onto my database connection I need to abstract out my password(s) into a file that
   isn't git tracked
-- Ids
-- Emails
-- Titles
-- etc
-
-  Data Structure
-
 - Think of my data structure first, think....
 - What should a student/user have (name, email, interestedIn etc)
 - What should a course have(name, category, completionTime, price, syllabus,
